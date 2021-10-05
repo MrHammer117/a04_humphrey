@@ -6,22 +6,29 @@
 <meta charset="utf-8">
 <title>Assignment 4 - Form Processor</title>
 </head>
-<body  id = "container">
+<body>
+  <div id = "container" class = "displayLine imgSpacing">
+    <img src = "central-park.jpg" alt = "central park" width = "720px">
+  </div>
+  <div id = "container">
   <table>
     <tr>
-      <th colspan = "2" class = "coloring">PHOTO DETAILS</th>
+      <td colspan="2" class  = "coloring"><h1>PHOTO DETAILS</h1></td>
     </tr>
     <tr>
-        <td colspan = "2"><label for = "title">Title</label>
-        <input type="text" id = "title" placeholder = "Give your photo a descriptive Name">
-        <br>
+    <td colspan = "2">
+      <div class = "spacing">
+        <label for = "title">Title</label>
+        <input type="text" id = "title" placeholder = "Give your photo a descriptive Name" class = "textwidth1">
         <label for = "description">Description</label>
-        <textarea name = "description">Adding a rich description will help with search results</textarea><td>
+        <textarea name = "description" rows = "5" class = "textwidth1" placeholder = "Adding a rich description will help with search results"></textarea>
+      </div>
+    </td>
     </tr>
     <tr>
-      <td class = "displayLine">
+      <td class = "displayLine spacing2">
         <label for = "continent">Continent</label>
-        <select name = "continent" id = "continent">
+        <select name = "continent" id = "continent" class = "textwidth2 displayLine">
           <option value = "starter" selected>Choose continent</option>
           <option value = "Africa">Africa</option>
           <option value = "Antartica">Antartica</option>
@@ -32,9 +39,9 @@
           <option value = "South America">South America</option>
         </select>
       </td>
-      <td class = "displayLine">
+      <td class = "displayLine spacing2">
         <label for = "country">Country</label>
-        <select name = "country" id = "country">
+        <select name = "country" id = "country" class = "textwidth2 displayLine">
           <option value = "starter" selected>Choose country</option>
           <option value = "Germany">Germany</option>
           <option value = "United Kingdom">United Kingdom</option>
@@ -43,13 +50,13 @@
           <option value = "Switzerland">Switzerland</option>
         </select>
       </td>
-      <td  class = "displayLine">
+      <td  class = "displayLine spacing2">
         <label for = "city">City</label>
-        <input type="text" id = "city">
+        <input type="text" id = "city" class = "displayLine">
       </td>
       <td>
           <div class = "radioAndCheck">
-            <h2>Copyright</h2>
+            <h3>Copyright</h3>
             <input type="radio" name="rights" value="1">
             <label for = "rights">All Rights reserved</label>
             <br>
@@ -57,7 +64,7 @@
             <label for = "Creative Commons">Creative Commons</label>
           </div>
           <div class = "radioAndCheck">
-            <h2>Creative Commons Types</h2>
+            <h3>Creative Commons Types</h3>
             <input type="checkbox" name="attribution" value="1">
             <label for = "attribution">Attribution</label>
             <br>
@@ -70,33 +77,44 @@
       </td>
     </tr>
   <tr>
-    <td colspan = "2" class = "coloring">
-      <label for = "Lisence">I accept the software license</label>
-      <input type="checkbox" name="License" value="1">
+    <td colspan = "2">
+      <div class = "coloring licenseSpacing">
+        <label for = "Lisence">I accept the software license</label>
+        <input type="checkbox" name="License" value="1">
+      </div>
     </td>
   </tr>
   <tr>
     <td>
-      <label for = "rate">Rate this Photo:</label>
-      <input type="number" id = "rate" min = "1" max = "5">
-      <br>
-      <label for = "color">Color Collection:</label>
-      <input type="color" id = "color">
+      <div class = "spacing">
+        <label for = "rate">Rate this Photo:</label>
+        <input type="number" id = "rate" min = "1" max = "5" class = "displayLine">
+        <br>
+        <label for = "color">Color Collection:</label>
+        <input type="color" id = "color" class = "displayLine">
+      </div>
     </td>
       <td>
-        <label for = "calendar">Date Taken:</label>
-        <input type="date" id = "calendar">
-        <br>
-        <label for="appt">Time Taken:</label>
-        <input type="time" id="appt" name="appt">
+        <div class = "dateAndTime">
+          <div class = "spacing">
+            <label for = "calendar">Date Taken:</label>
+            <input type="date" id = "calendar" class = "displayLine">
+            <br>
+            <label for="appt">Time Taken:</label>
+            <input type="time" id="appt" name="appt" class = "displayLine">
+          </div>
+        </div>
       </td>
     </tr>
     <tr>
-      <td colspan = "2" class = coloring>
-        <button type = "button">Submit</button>
-        <button type = "button">Clear Form</button>
+      <td colspan = "2">
+        <div class = "buttonSpacing">
+          <button type = "button">Submit</button>
+          <button type = "button">Clear Form</button>
+        </div>
       </td>
     </tr>
   </table>
+</div>
 </body>
 </html>

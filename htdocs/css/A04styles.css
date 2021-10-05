@@ -1,27 +1,30 @@
 table{
-  font-family: verdana;
+  font-family: sans-serif;
   background-color:#c4bdff;
-  width:700px;
 }
 
-
+button{
+  border-radius:10px;
+  color: white;
+  background-color: red;
+  box-shadow: 2px 3px 4px black;
+  padding: 10px 20px;
+}
 #container {
 display: flex;
 flex-direction: row;
 justify-content: center;
 width:100%;
 height:100%;
-}
-nav {
-  flex: 0 1 auto;
-}
-main  {
-  flex: 0 1 auto;
-}
-aside {
-  flex: 0 1 auto;
+align-items: stretch;
 }
 
+h1{
+  font-size:14pt;
+  margin:0;
+  padding:0;
+  color:white;
+}
 
 .displayLine{
   display:block;
@@ -34,4 +37,42 @@ aside {
 }
 .coloring{
   background-color:#9a75ff;
+}
+.textwidth1{
+    width: 690px;
+}
+.textwidth2{
+    width: 150px;
+}
+.spacing{
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top:10px;
+  margin-bottom:15px;
+}
+.spacing2{
+  margin-left: 10px;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+.imgSpacing{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+.licenseSpacing{
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top:5px;
+  margin-bottom:10px;
+}
+.buttonSpacing{
+  background-color:#9a75ff;
+  margin-right: 10px;
+  margin-left: 5px;
+  margin-top:10px;
+}
+.dateAndTime{
+  border: 1px solid black;
+  padding: 4px;
+  margin: 4px;
 }
